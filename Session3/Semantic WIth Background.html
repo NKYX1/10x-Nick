@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        /* Set the background GIF for the whole page */
+        body {
+            background-image: url('https://i.pinimg.com/originals/94/31/7e/94317e605a84bb4c3a2a2ad4170ccf7d.gif');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Optional: Remove the white layer */
+        header, main, footer {
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header h1, header nav a, main h2, main p, footer p {
+            color: black; /* Set text color to make it readable */
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 style="text-align: center;color: white;">Welcome to the Culinary World</h1>
+        <div style="text-align: center;">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/998/955/non_2x/ai-generative-dragon-stock-illustration-free-png.png" 
+                 alt="dragon" width="300" height="200">
+        </div>
+        <nav style="text-align: center;">
+             <!-- Navigation Links -->
+            <a style="color: white;" href="./home">Home</a>
+            <a style="color: white;"href="./about">About</a>
+            <a style="color: white;"href="./contact">contact</a>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Article with Figure -->
+        <section>
+            <article> 
+                <h2 style="text-align: center;color: white;">Chinese Food</h2>
+                <p style="text-align: center;color: white;">中国菜！好菜！</p>
+                <figure>
+                    <div style="text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2fqXI7cf7Wn-MMn77N23Nv7ABCamMUXY9Q&s" alt="chinese food " width="300" height="200">
+                    <figcaption style="color: crimson;"><strong>A breathtaking delicacy</strong></figcaption>
+                </div>
+                </figure>
+                <p style="color: rgb(255, 255, 255);text-align: center;"> <strong>好吃不贵!</strong></p>
+                <!-- HTML Entity Example: Trademark -->
+                <p style=" font-size: x-large;text-align: center;color: white;">This delicious dish is unique to our region <strong>&trade;</strong>.</p>
+            </article>
+        </section>
+        <!-- Section 2: Article with Aside -->
+        <section>
+            <article>
+                <h3 style=" text-align: center;"><strong style="color: blue;font-size: larger;">中国面！Chnese Noodles!</strong></h3>
+                <p style=" text-align: center;"><em style="font-size: larger;color: white;">让你吃不停！</em></p>
+                <!-- Aside for additional context -->
+                <aside>
+                    <p style="text-align: center;font-size: x-large;color: white;"><strong>你可知道？“Did you know?”</strong> 日本拉面和韩国面条都是在中国面条之后发明的。<br> “Japanese ramen and also Korean noodles were invented after Chinese noodles.”</p>
+                    <!-- HTML Entity Examples: Less Than and Greater Than -->
+                    <p style=" text-align: center;color: white;">
+                        Coding Tip: Use `&lt;` and `&gt;` to display "<" and ">" in your HTML code.
+                    </p>
+                    <!-- HTML Entity Example: Euro -->
+                    <p style=" text-align: center;color: white;">
+                        Did you know? Some noodles are sold for as little as 2&euro; in parts of China!
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p style="text-align: center;color: white;">&copy; NK.YX 2024. All Rights Reserved. </p>
+        <address style=" text-align: center;color: white;">
+            Contact <a href="mailto:nkyx1987@gmail.com">nkyx1987@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
