@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        body {
+            background-color: rgb(102, 0, 255);
+            display: flex;
+            flex-direction: column; /* Arrange items in a column (vertical alignment) */
+            justify-content: flex-start; /* Align items at the top */
+            align-items: center; /* Center items horizontally */
+            min-height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            padding-top: 20px; /* Add spacing from the top */
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: x-large;
+            margin-bottom: 20px; /* Add spacing below the heading */
+        }
+        table {
+            background-color: rgb(255, 255, 255);
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> <strong>Employees Rating Table</strong></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>role</th>
+                <th>company</th>
+                <th>location</th>
+                <th>rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nick</td>
+                <td>Main Manager</td>
+                <td>N Future</td>
+                <td>China</td>
+                <td><img src="../Media/stars-2.png" alt="rating stars"></td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Main Assistant</td>
+                <td>N Future</td>
+                <td>China</td>
+                <td><img src="../Media/stars-2.png" alt="rating stars"></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Financist</td>
+                <td>N Future</td>
+                <td>Georgia</td>
+                <td><img src="../Media/stars-2.png" alt="rating stars"></td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Financial Assistant</td>
+                <td>N Future</td>
+                <td>Georgia</td>
+                <td><img src="../Media/stars-2.png" alt="rating stars"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
