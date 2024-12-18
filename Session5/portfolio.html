@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Type Selectors */
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: darkgreen;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        /* Class Selectors */
+        .project1 {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid navy;
+        }
+
+        .project2 {
+            background-color: lightcoral;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid maroon;
+        }
+
+        .project3 {
+            background-color: lightgreen;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid darkgreen;
+        }
+
+        /* ID Selectors */
+        #about {
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #skills {
+            background-color: lightyellow;
+        }
+
+        #skills ul li {
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        nav ul li {
+            list-style-type: none;
+            color: darkred;
+        }
+
+        /* Child Selector */
+        #projects > h3 {
+            font-weight: bold;
+            color: teal;
+        }
+
+        /* Attribute Selector */
+        img[src] {
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+        /* Pseudo-Classes */
+        nav ul li a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-Elements */
+        #skills ul li::before {
+            content: "⭐ ";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>"Welcome to My Profile"</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am fluent in Chinese and work as an interpreter and translator, bridging communication between diverse teams and stakeholders. 
+            In addition to my language expertise, I also serve as the head of the vehicle department at my company, overseeing operations, 
+            logistics, and team management. My role demands a unique combination of linguistic precision and technical understanding, 
+            and I take pride in delivering exceptional results in every aspect of my responsibilities.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfoqvBj8X5Kp1m0D7VwKAHQdPu-n8N9FY_Ow&s" alt="Profile Picture">
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project1">
+            <h3>1<sup>st</sup> Project: Advanced Vehicle Components</h3>
+            <p>
+                One of my notable projects was negotiating a large-scale contract with a Chinese supplier for advanced vehicle components. 
+                Acting as the lead interpreter during the negotiation, I ensured the accuracy of every term and condition discussed, 
+                bridging language and cultural differences seamlessly. The deal was finalized successfully, resulting in a 30% reduction 
+                in procurement costs and setting the foundation for a long-term partnership.
+            </p>
+        </div>
+        <div class="project2">
+            <h3>2<sup>nd</sup> Project: Technical Training Program</h3>
+            <p>
+                In another project, I managed the localization of a technical training program designed for our fleet maintenance team. 
+                I translated the materials from Chinese into English, adapting them for cultural and technical relevance, and conducted 
+                live interpretation during hands-on training sessions. This initiative improved the efficiency of our team and led to 
+                a significant reduction in vehicle downtime.
+            </p>
+        </div>
+        <div class="project3">
+            <h3>3<sup>rd</sup> Project: GPS Tracking System</h3>
+            <p>
+                A third successful endeavor was implementing a GPS tracking system across our vehicle fleet. 
+                As the head of the vehicle department, I coordinated with the Chinese manufacturers, translated user manuals, 
+                and led training sessions for the team. My linguistic expertise and technical oversight ensured the system’s smooth 
+                integration, increasing fleet efficiency by 25%.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Fluency in Chinese and cross-cultural communication</li>
+            <li>Project management and coordination</li>
+            <li>Technical expertise in fleet and vehicle operations</li>
+            <li>Translation and interpretation accuracy</li>
+            <li>Leadership and team management skills</li>
+        </ul>
+    </section>
+</body>
+</html>
