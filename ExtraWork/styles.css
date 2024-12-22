@@ -1,0 +1,230 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Search Bar */
+  .search-bar input {
+    padding: 0.5rem;
+    width: 200px;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background: #0056b3;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://www.shutterstock.com/image-illustration/presentation-car-covered-cloth-on-260nw-1681763644.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    margin-top: 2rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  /* Background Styling for Sections */
+.about, .services, .cars {
+  padding: 2rem;
+  text-align: center;
+  background: url('https://img.stablecog.com/insecure/1920w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vMjM0YjAzMDEtZDRjYi00NTc2LTk2MDktNDE0OTZlOGIzNmVkLmpwZWc.webp') 
+    no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+  /* About Section */
+  .about, .services {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about h2, .services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+  }
+  
+  /* Services Section */
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Cars Section */
+  .cars {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cars h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .car-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .car-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .car-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Team Section */
+  .team {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .team table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+  }
+  
+  .team table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  .team th, .team td {
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  .team th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+  }
+  
+  .footer p, .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #007BFF;
+  }
