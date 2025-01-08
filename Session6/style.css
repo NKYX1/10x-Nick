@@ -1,0 +1,318 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  body img {
+    width: 100%; /* Makes the image span the entire width of the screen */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any space below the image */
+}
+  img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+  /* Navbar */
+  .navbar {
+    position: fixed; /* Fixes position at the top */
+    top: 20px; /* Sticks to the top of the viewport */
+    left: 50%; /* Centers horizontally */
+    transform: translateX(-50%); /* Offset to center it perfectly */
+    z-index: 1000; /* Higher stacking order to stay above everything */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(180deg, #f6e7c1, #edd4a0);
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 960px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #7c6149;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a.active {
+    font-weight: bold;
+    color: #382918;
+  }
+  
+  .nav-links a:hover {
+    color: #3f2a1b;
+  }
+  
+  /* Book Button */
+  .book-btn {
+    background: #5F888A;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-btn:hover {
+    background: #6a8a8a;
+  }
+  
+  .book-btn .icon {
+    font-size: 18px;
+  }
+  .watch-btn {
+    border-radius: 25px;
+  }
+  .play-btn {
+    border-radius: 25px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .book-btn {
+      margin-top: 1rem;
+    }
+  }
+  /* Highlight Section */
+.highlight-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background: #0f0f0f;
+    color: #ffffff;
+  }
+  .highlight-box {
+    text-align: center;
+    max-width: 300px;
+    padding: 1rem;
+    border: 1px dashed #4a4a4a;
+    border-radius: 8px;
+  }
+  
+  .highlight-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #EEF4F8;
+  }
+  
+  .highlight-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight-box p:first-of-type {
+    font-weight: bold;
+    color: #79969C;
+  }
+  
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('./media/Call\ To\ Action.png') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .watch-btn, .play-btn {
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .watch-btn {
+    background: #f8d57e;
+  }
+  
+  .play-btn {
+    background: #5F888A;
+    color: #fff;
+  }
+  
+/* Story Section */
+.story-section {
+    background-color: #192734;
+    padding: 50px 20px;
+  }
+  
+  .story-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .story-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    border: 4px solid #c6a76a;
+  }
+  
+  .story-content {
+    max-width: 600px;
+  }
+  
+  .story-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+  }
+  
+  .story-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .story-get-button {
+    background: #EFCFA4;
+    color: #4A3211;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .get-book-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #c6a76a;
+    color: #192734;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .get-book-button span {
+    margin-right: 10px;
+  }
+  
+  .get-book-button .book-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    background-color: #FCEAD1;
+    color: #192734;
+    padding: 30px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer-contact, .footer-links {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-contact h4, .footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #192734;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131D24;
+  padding: 10px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.footer-bottom-left a {
+  margin-right: 15px;
+  color: #EEF4F8;
+  text-decoration: none;
+}
+
+.footer-bottom-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-right p {
+  margin: 0;
+  font-size: 14px;
+  color: #EEF4F8;
+}
